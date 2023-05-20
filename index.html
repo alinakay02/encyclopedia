@@ -1,0 +1,143 @@
+<!DOCTYPE>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <title>Курсовая работа</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="navigation_panel.css">
+</head>
+<body>
+<div class="header">
+<!--    навигационная панель-->
+    <nav class="nav_container">
+        <div class="nav">
+            <div class="logo">
+                <a href="index.html">
+                    <p>
+                        <span>F</span>
+                        <span>O</span>
+                        <span>X</span>
+                        <span>Y</span>
+                    </p>
+                    <p class="second_str">
+                        <span>R</span>
+                        <span>E</span>
+                        <span>P</span>
+                        <span>O</span>
+                    </p>
+                </a>
+            </div>
+
+            <div class="menu">
+                <a href="new.html"><div class="menu_elem first">ВСЕ СТАТЬИ</div></a>
+                <a href="popular.html"><div class="menu_elem second">ПОПУЛЯРНОЕ</div></a>
+                <a href="about.html"><div class="menu_elem three">О ПЛОЩАДКЕ</div></a>
+                <div class="profile dropdown">
+                    <div class="menu_elem"> <img class="menu_elem" src="images/icon-profile.png">
+                        <div class="dropdown-content">
+                            <a href="login.html">Войти</a>
+                            <a href="registration.html">Зарегистрироваться</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+</div>
+<div class="container">
+<!--    для статей-->
+    <div class="posts-list">
+        <article class="post">
+            <div class="post-image"><a href=""><img src="images/test.jpg"></a></div>
+            <div class="post-content">
+                <div class="category"><a href="">Дизайн</a></div>
+                <p class="post-title">Весна</p>
+                <div class="summary">
+                    <p>Очень богат русский язык словами, относящимися к временам года и к природным явлениям, с ними связанным.</p>
+                    <p>Возьмем хотя бы раннюю весну. У неё, у этой ещё зябнувшей от последних заморозков девочки-весны, есть в котомке много хороших слов.</p>
+                    <p>Начинаются оттепели, ростепели, капели с крыш. Снег делается зернистым, ноздреватым, оседает и чернеет. Его съедают туманы. Постепенно развозит дороги, наступает распутица, бездорожье. На реках появляются во льду первые промоины с черной водой, а на буграх — проталины и проплешины. По краю слежавшегося снега уже желтеет мать-и-мачеха.</p>
+                </div>
+                <div class="post-footer">
+                    <a class="more-link" href="">Продолжить чтение</a>
+                    <button class="liked" onclick="like()"><img src="images/icon-like.png"></button>
+                    <span class="liked"> 1234</span>
+                </div>
+            </div>
+        </article>
+        <article class="post">
+            <div class="post-image"><a href=""><img src="images/test.jpg"></a></div>
+            <div class="post-content">
+                <div class="category"><a href="">Дизайн</a></div>
+                <p class="post-title">Весна</p>
+                <div class="summary">
+                    <p>Очень богат русский язык словами, относящимися к временам года и к природным явлениям, с ними связанным.</p>
+                    <p>Возьмем хотя бы раннюю весну. У неё, у этой ещё зябнувшей от последних заморозков девочки-весны, есть в котомке много хороших слов.</p>
+                    <p>Начинаются оттепели, ростепели, капели с крыш. Снег делается зернистым, ноздреватым, оседает и чернеет. Его съедают туманы. Постепенно развозит дороги, наступает распутица, бездорожье. На реках появляются во льду первые промоины с черной водой, а на буграх — проталины и проплешины. По краю слежавшегося снега уже желтеет мать-и-мачеха.</p>
+                </div>
+                <div class="post-footer">
+                    <a class="more-link" href="">Продолжить чтение</a>
+                    <button class="liked" onclick="like()"><img src="images/icon-like.png"></button>
+                    <span class="liked"> 1234</span>
+                </div>
+            </div>
+        </article>
+    </div>
+<!--    боковая панель-->
+    <div class="aside">
+<!--        категории-->
+        <div class="widget">
+            <p class="widget-title">Категории</p>
+            <ul class="widget-category-list">
+                <li><a href="">Дизайн</a> (2)</li>
+                <li><a href="">Вёрстка</a> (5)</li>
+                <li><a href="">Видео</a> (1)</li>
+            </ul>
+        </div>
+<!--        Недавно добавленное-->
+        <div class="widget">
+            <p class="widget-title">Недавно добавленное</p>
+            <a href="">
+                <div class="widget-posts-list">
+                    <div class="post-image-small"><img src="images/test.jpg"></div>
+                    <p class="widget-post-title">Весна<br>Text content</p>
+                </div>
+            </a>
+            <a href="">
+                <div class="widget-posts-list">
+                    <div class="post-image-small"><img src="images/test.jpg"></div>
+                    <p class="widget-post-title">Весна<br>Text content</p>
+                </div>
+            </a>
+            <a href="">
+                <div class="widget-posts-list">
+                    <div class="post-image-small"><img src="images/test.jpg"></div>
+                    <p class="widget-post-title">Весна<br>Text content</p>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
+
+<div class="footer">
+    <div class="footer_container">
+        <div class="footer-col"><span>Энциклопедия © 2023</span></div>
+        <div class="footer-col">
+            <div class="social-bar-wrap">
+                <a title="Facebook" href="https://vk.com/ivanhoe_kn" target="_blank"><img src="images/facebook.png"></a>
+                <a title="VK" href="https://vk.com/ivanhoe_kn" target="_blank"><img src="images/vk.png"></a>
+                <a title="Telegram" href="https://vk.com/ivanhoe_kn" target="_blank"><img src="images/telegram.png"></a>
+                <a title="Instagram" href="https://vk.com/ivanhoe_kn" target="_blank"><img src="images/instagram.png"></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    //функция для лайка (добавления в избранное)
+    function like(){
+
+    }
+</script>
+</body>
+
+</html>
