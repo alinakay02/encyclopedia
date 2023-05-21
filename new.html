@@ -5,6 +5,7 @@
     <title>Новое</title>
     <link rel="stylesheet" href="navigation_panel.css">
     <link rel="stylesheet" href="new.css">
+    <link rel="stylesheet" href="login.css">
 </head>
 <body>
 <div class="header">
@@ -35,8 +36,8 @@
                 <div class="profile dropdown">
                     <div class="menu_elem"> <img class="menu_elem" src="images/icon-profile.png">
                         <div class="dropdown-content">
-                            <a href="login.html">Войти</a>
-                            <a href="registration.html">Зарегистрироваться</a>
+                            <a href="#openModal">Войти</a>
+                            <a href="#openModal-signup">Зарегистрироваться</a>
                         </div>
                     </div>
                 </div>
@@ -88,6 +89,30 @@
                 <li><a href="">Вёрстка</a> (5)</li>
                 <li><a href="">Видео</a> (1)</li>
             </ul>
+        </div>
+    </div>
+</div>
+
+<!-- модальное окно для входа-->
+<div id="openModal" class="modal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <a href="#close" title="Close" class="close">×</a>
+            </div>
+            <div class="modal-body">
+                <div class="form-container">
+                    <p class="modal-title">Авторизация</p>
+                    <form method="POST" class="form" action="">
+                        <p><input class="intext login" type="text" placeholder="Login"  required></p>
+                        <p><input class="intext pass" type="password" placeholder="Password" required></p>
+                        <p class="into"><button type="submit">Login</button></p>
+                        <p class="or">---------------  <span class="sp">or</span>  ---------------</p>
+                        <a  href="#openModal-signup"><p class="but">Create new account</p></a>
+                    </form>
+                </div>
+
+            </div>
         </div>
     </div>
 </div>

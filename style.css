@@ -27,9 +27,6 @@
     font-size: 24px;
     margin: 2px 0;
 }
-p {
-    margin: 8px 0;
-}
 .post {
     background-color: white;
     padding: 25px;
@@ -56,7 +53,7 @@ p {
     text-align: right;
     font-size: 16px;
 }
-button {
+.post-footer button {
     background-color: white;
     padding: 3px 0 3px 22vw;
     border: none;
@@ -110,4 +107,7 @@ li {
 }
 li:before {
     content: "➢  "; /* Добавляем в качестве маркера символ */
+}
+li:hover {
+    text-decoration: underline;
 }

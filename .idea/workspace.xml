@@ -4,7 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3343d35f-8b53-4518-8407-dc5826c53356" name="Changes" comment="" />
+    <list default="true" id="3343d35f-8b53-4518-8407-dc5826c53356" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/article.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/article.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/login.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/about.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/navigation_panel.css" beforeDir="false" afterPath="$PROJECT_DIR$/navigation_panel.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/new.css" beforeDir="false" afterPath="$PROJECT_DIR$/new.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/new.html" beforeDir="false" afterPath="$PROJECT_DIR$/new.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/popular.html" beforeDir="false" afterPath="$PROJECT_DIR$/popular.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/registration.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,7 +32,13 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="2Q3Dr6Z39lQex7RQUznJfmlPD0L" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -29,6 +49,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -48,6 +69,7 @@
       <updated>1684573568739</updated>
       <workItem from="1684573574820" duration="134000" />
       <workItem from="1684573744148" duration="31951000" />
+      <workItem from="1684661542512" duration="16753000" />
     </task>
     <servers />
   </component>

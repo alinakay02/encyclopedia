@@ -31,9 +31,6 @@
     font-size: 24px;
     margin: 2px 0;
 }
-p {
-    margin: 8px 0;
-}
 .post {
     background-color: white;
     padding: 15px;
@@ -58,25 +55,6 @@ p {
 .post-footer {
     margin: 20px 0;
 }
-.more-link {
-    background-color: #659d9d;
-    padding: 5px 25px;
-    color: white;
-    font-size: smaller;
-}
-.liked img {
-    width: 14px;
-}
-.liked {
-    text-align: right;
-    font-size: 16px;
-}
-button {
-    background-color: white;
-    padding: 3px 0 3px 22vw;
-    border: none;
-}
-
 /*для боковой панели*/
 .aside {
     width: 30vw;
@@ -97,20 +75,6 @@ button {
     border: 2px solid #99d0d0;
     box-shadow: 6px 6px 2px 1px rgba(0, 0, 255, .2);
 }
-.post-image-small img {
-    position: relative;
-    width: 7vw;
-    margin-left: 8px;
-}
-.widget-posts-list {
-    display: flex;
-    margin-bottom: 10px;
-    padding-bottom: 10px;
-    border-bottom: 1px solid #99d0d0;
-}
-.widget-post-title {
-    padding-left: 20px;
-}
 .widget-category-list {
     padding-left: 60px;
     margin-bottom: 10px;
@@ -126,4 +90,6 @@ li {
 li:before {
     content: "➢  "; /* Добавляем в качестве маркера символ */
 }
-
+li:hover {
+    text-decoration: underline;
+}

@@ -2,9 +2,9 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>О площадке</title>
+    <title>Статья</title>
     <link rel="stylesheet" href="navigation_panel.css">
-    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="article.css">
     <link rel="stylesheet" href="login.css">
 </head>
 <body>
@@ -46,8 +46,19 @@
     </nav>
 </div>
 <div class="container">
+    <div class="article-name">
+        Тема статьи
+    </div>
     <div class="about_repo">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut enim esse illo in laboriosam nam numquam placeat temporibus. Deserunt esse et fugiat, iste mollitia neque provident soluta velit voluptate voluptatem.</p>
+        <p>
+            <img src="images/test.jpg">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet animi at atque cumque cupiditate dicta dolore eaque, eligendi esse facilis hic natus nulla obcaecati quae ratione sequi tempore unde voluptatum? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut enim esse illo in laboriosam nam numquam placeat temporibus. Deserunt esse et fugiat, iste mollitia neque provident soluta velit voluptate voluptatem.</p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus accusantium beatae consequuntur corporis, delectus dicta doloremque eligendi esse et id impedit magni mollitia necessitatibus numquam possimus ratione similique sint vero.
+            <p class="category">Категория: Дизайн</p>
+    </div>
+    <div class="article-footer">
+        <span class="like"><button>Добавить в избранное <img src="images/icon-like.png"></button></span>
+        <span class="date">21.05.2023</span>
     </div>
 </div>
 
@@ -66,31 +77,7 @@
                         <p><input class="intext pass" type="password" placeholder="Password" required></p>
                         <p class="into"><button type="submit">Login</button></p>
                         <p class="or">---------------  <span class="sp">or</span>  ---------------</p>
-                        <a href="#openModal-signup"><p class="but">Create new account</p></a>
-                    </form>
-                </div>
-
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- модальное окно для регистрации-->
-<div id="openModal-signup" class="modal">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <a href="#close" title="Close" class="close">×</a>
-            </div>
-            <div class="modal-body">
-                <div class="form-container">
-                    <p class="modal-title">Регистрация</p>
-                    <form method="POST" class="form" action="">
-                        <p><input class="intext login" type="text" placeholder="Login"  required></p>
-                        <p><input class="intext pass" type="password" placeholder="Password" required></p>
-                        <p class="into"><button type="submit">Login</button></p>
-                        <p class="or">---------------  <span class="sp">or</span>  ---------------</p>
-                        <a href="#openModal-signup"><p class="but">Create new account</p></a>
+                        <a  href="#openModal-signup"><p class="but">Create new account</p></a>
                     </form>
                 </div>
 
