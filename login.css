@@ -14,7 +14,12 @@
     margin: 0 auto;
     padding: 0;
     width: 35vw;
+    overflow: auto;
 }
+.modal::-webkit-scrollbar {
+    display: none;
+}
+
 /* при отображении модального окно */
 .modal:target {
     opacity: 1; /* делаем окно видимым */
@@ -45,6 +50,7 @@
     border-radius: 20px;
     border: 2px solid rgb(145, 144, 144);
     box-shadow: 4px 4px 1px 1px rgb(145, 144, 144);
+
 }
 /* свойства для заголовка модального окна */
 .modal-header {
@@ -165,4 +171,37 @@
 .form a p{
     text-align: center;
     margin: 0 auto;
+}
+
+/*для регистрации*/
+.form p textarea {
+    /*height: 200px;*/
+    resize: none;
+}
+.intext {
+    background-color: #e8e8e8;
+}
+.email {
+    background: url(images/email.png) no-repeat 6px 10px;
+    background-size: auto 50%;
+    background-color: #e8e8e8;
+}
+.tg {
+    background: url(images/tg.png) no-repeat 6px 10px;
+    background-size: auto 50%;
+    background-color: #e8e8e8;
+}
+.about {
+    background: url(images/about.png) no-repeat 6px 10px;
+    background-size: auto 50%;
+    background-color: #e8e8e8;
+}
+/*#openModal-signup .modal-dialog {*/
+/*    margin-top: 70px;*/
+/*}*/
+#openModal-signup .modal-body {
+    padding: 0 30px;
+}
+#openModal-signup form button{
+    background-color: #4747ff;
 }
