@@ -149,6 +149,9 @@
     margin: 0 auto 10px auto;
     font-family: "Century Gothic", sans-serif;
 }
+.form p {
+    text-align: center;
+}
 .pass {
     background: url(images/password.png) no-repeat 6px 10px;
     background-size: auto 50%;
