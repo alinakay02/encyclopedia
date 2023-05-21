@@ -1,12 +1,3 @@
-/*!*содержимое сайта*!*/
-/*.container {*/
-/*    width: 70vw;*/
-/*    background-color: white;*/
-/*    margin: 10px auto;*/
-/*    box-shadow: 10px 5px 5px #6f7da9;*/
-/*    height: max-content;*/
-/*    padding-bottom: 30px;*/
-/*}*/
 /*для модального окна*/
 .modal {
     position: fixed; /* фиксированное положение */
@@ -150,7 +141,7 @@
     margin: 20px auto;
     text-align: center;
 }
-.form .intext {
+.form p .intext {
     width: 300px;
     height: 46px;
     border: none;

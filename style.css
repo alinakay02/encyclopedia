@@ -111,3 +111,6 @@ li:before {
 li:hover {
     text-decoration: underline;
 }
+.form p .intext {
+    width: 350px;
+}
