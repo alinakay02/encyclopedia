@@ -91,10 +91,50 @@
             <p><span><img src="images/icon-like.png"> 1234</span><span class="fp-date">Date</span></p>
         </div>
     </div>
+
 <!--    публикации-->
-    <div id="published-posts" class="punct pub-posts">публикации</div>
+    <div id="published-posts" class="punct pub-posts">
+<!--        для одной публикации -->
+        <div class="pub-post-container">
+            <p class="pp-category">Категория</p>
+            <p class="pub-post-title">Name of article</p>
+            <p class="pp-summary">Summary</p>
+            <p class="pp-date">Date</p>
+        </div>
+<!--        //для одной публикации -->
+        <div class="pub-post-container">
+            <p class="pp-category">Категория</p>
+            <p class="pub-post-title">Name of article</p>
+            <p class="pp-summary">Summary</p>
+            <p class="pp-date">Date</p>
+        </div>
+    </div>
 <!--    запросы-->
-    <div id="requested" class="punct reqs">запросы</div>
+    <div id="requested" class="punct reqs">
+        <div class="request-person">
+            <div class="person-info">
+                <div class="prof-img"><img class="pf-img" src="images/icon-profile.png"></div>
+                <div class="prof-info">
+                    <p><span class="val-name">Дата регистрации аккаунта: </span>
+                        <span class="val">22.05.2023</span>
+                        <span class="val-name right">Email: </span>
+                        <span class="val right">fhgrufdjkd@gmail.com</span>
+                    </p>
+                    <p>
+                        <span class="val-name">Telegram: </span>
+                        <span class="val">nik_name</span>
+                        <span class="val-name right">Login: </span>
+                        <span class="val right">username</span>
+                    </p>
+                    <p>
+                        <span class="val-name">About: </span>
+                        <span class="val"> jfgnrj nrufjcdke jngfjrfk</span>
+                    </p>
+                </div>
+            </div>
+            <div class="button-approve"><button class="req-but">Одобрить</button></div>
+        </div>
+    </div>
 
 
 </div>
@@ -162,7 +202,7 @@
     </div>
 </div>
 <script>
-    let menuIndex = 1;
+    let menuIndex = 3;
     show(menuIndex);
     function show(n) {
         const slides = document.getElementsByClassName("punct");

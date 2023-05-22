@@ -97,11 +97,6 @@
 .menu-bar {
     margin: 10px 0 0 24px;
 }
-.publications {
-
-}
-.request {
-}
 .active {
     text-decoration: underline;
     text-decoration-color: #54c7d7;
@@ -122,10 +117,7 @@
     width: 40vw;
     min-height: 5vw;
     margin: 10px auto 20px auto;
-    padding: 4px 0 10px 0;
-    position: relative;
-    top: 0;
-    left: 0;
+    padding-bottom: 5px;
 }
 .fav-post-container p {
     margin: 8px 0;
@@ -135,7 +127,7 @@
 }
 .fav-post-title {
     color: #466791;
-    font-size: 26px;
+    font-size: 22px;
     padding-top: 8px;
 }
 .fp-date {
@@ -148,13 +140,106 @@
 .fav-post-container p span {
     color: dimgrey;
 }
-.fav-post-container:hover {
-    box-shadow: 2px 2px white, 4px 4px #525252;
-    top: -4px;
-    left: -4px;
-}
-.fav-post-container .fp-category {
+.fav-post-container .fp-category, .pp-category {
     margin: 4px 40px 4px 0;
     float: right;
     color: dimgrey;
+}
+
+.pub-post-container {
+    background-color: #eaeaea;
+    color: black;
+    font-family: Arial, sans-serif;
+    width: 40vw;
+    min-height: 6vw;
+    margin: 10px auto 20px auto;
+    padding-bottom: 5px;
+}
+.fav-post-container, .pub-post-container, .request-person {
+    box-shadow: 6px 6px 2px 1px rgba(0, 0, 255, .2);
+}
+.pub-post-container p {
+    margin: 4px 0 4px 30px;
+}
+.pub-posts, .reqs {
+    margin: 10px;
+}
+.pub-post-title {
+    color: #466791;
+    font-size: 22px;
+    padding-top: 8px;
+}
+.pp-date {
+    float: right;
+}
+.pub-post-container .pp-date {
+    margin-right: 60px;
+    color: dimgrey;
+}
+.pub-post-container .pp-category {
+    margin-right: 40px;
+    color: dimgrey;
+}
+
+.request-person {
+    background-color: #dedede;
+    color: black;
+    display: flex;
+    justify-content: center;
+    font-family: Arial, sans-serif;
+    width: 50vw;
+    min-height: 6vw;
+    margin: 10px auto 20px auto;
+    padding-bottom: 5px;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.prof-img, .prof-info {
+    display: inline-block;
+}
+.prof-img, .prof-info, .req-but {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.person-info .prof-img {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.person-info, .button-approve {
+    display: flex;
+    height: 66px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.person-info p {
+    margin: 4px 0;
+}
+.prof-img img {
+    height: 50px;
+}
+.person-info {
+    min-width: 35vw;
+    margin-right: 20px;
+    padding-bottom: 4px;
+}
+.button-approve {
+    width: 10vw;
+}
+.button-approve button {
+    margin: auto auto;
+    border: none;
+    background-color: #143f57;
+    border-radius: 0;
+    color: white;
+    height: 40px;
+    width: 120px;
+}
+.val {
+    margin-right: 20px;
+    font-size: smaller;
+}
+.val-name {
+    color: #2c385e;
+    font-size: smaller;
 }
