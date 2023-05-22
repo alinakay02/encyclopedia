@@ -19,14 +19,11 @@
     margin: 10px auto;
     font-family: Arial, sans-serif;
 }
-form {
-    width: 30vw;
-}
 .art-form p {
     margin: 6px auto;
     height: 40px;
 }
-p .str1 .f-name{
+.art-form p .str1 .f-name{
     margin-top: 30px;
 }
 .f-name {
