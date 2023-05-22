@@ -97,30 +97,64 @@
 .menu-bar {
     margin: 10px 0 0 24px;
 }
-.favourites p {
-    /*text-decoration: underline #2790c9;*/
-}
 .publications {
 
 }
 .request {
 }
-/*.favourites:hover {*/
-/*    border-bottom: 2px solid #088bb4;*/
-/*}*/
-
 .active {
     text-decoration: underline;
     text-decoration-color: #54c7d7;
     text-underline-offset: 11px;
     text-decoration-thickness: 4px;
 }
-.pub-posts, .reqs, .f-posts {
-    display: none;
-}
-.pub-posts:target, .reqs:target, .f-posts:target {
-    display: initial;
-}
 .punct {
     display: none;
+}
+.f-posts {
+    margin: 10px;
+}
+/*контейнер для избранных статей*/
+.fav-post-container {
+    background-color: #eaeaea;
+    color: black;
+    font-family: Arial, sans-serif;
+    width: 40vw;
+    min-height: 5vw;
+    margin: 10px auto 20px auto;
+    padding: 4px 0 10px 0;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.fav-post-container p {
+    margin: 8px 0;
+}
+.fav-post-container p span img {
+    height: 16px;
+}
+.fav-post-title {
+    color: #466791;
+    font-size: 26px;
+    padding-top: 8px;
+}
+.fp-date {
+    float: right;
+    margin-right: 60px;
+}
+.fav-post-container p {
+    margin-left: 30px;
+}
+.fav-post-container p span {
+    color: dimgrey;
+}
+.fav-post-container:hover {
+    box-shadow: 2px 2px white, 4px 4px #525252;
+    top: -4px;
+    left: -4px;
+}
+.fav-post-container .fp-category {
+    margin: 4px 40px 4px 0;
+    float: right;
+    color: dimgrey;
 }

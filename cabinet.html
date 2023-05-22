@@ -66,15 +66,31 @@
     </div>
 
     <div class="menu-bar">
-        <a><div class="favourites"><button class="menu-buts" onclick="show(1)">Избранное</button></div></a>
-        <a><div class="publications"><button class="menu-buts" onclick="show(2)">Публикации</button></div></a>
-        <a><div class="request"><button class="menu-buts" onclick="show(3)">Запрос стать писателем</button></div></a>
+        <div class="favourites"><button class="menu-buts" onclick="show(1)">Избранное</button></div>
+        <div class="publications"><button class="menu-buts" onclick="show(2)">Публикации</button></div>
+        <div class="request"><button class="menu-buts" onclick="show(3)">Запрос стать писателем</button></div>
     </div>
 </div>
 
 <div class="container">
 <!--   избранное-->
-    <div id="favourites-posts" class="punct f-posts">избранное</div>
+    <div id="favourites-posts" class="punct f-posts">
+        <div class="fav-post-container">
+            <p class="fp-category">Категория</p>
+            <p class="fav-post-title">Name of article</p>
+            <p><span><img src="images/icon-like.png"> 1234</span><span class="fp-date">Date</span></p>
+        </div>
+        <div class="fav-post-container">
+            <p class="fp-category">Категория</p>
+            <p class="fav-post-title">Name of article</p>
+            <p><span><img src="images/icon-like.png"> 1234</span><span class="fp-date">Date</span></p>
+        </div>
+        <div class="fav-post-container">
+            <p class="fp-category">Категория</p>
+            <p class="fav-post-title">Name of article</p>
+            <p><span><img src="images/icon-like.png"> 1234</span><span class="fp-date">Date</span></p>
+        </div>
+    </div>
 <!--    публикации-->
     <div id="published-posts" class="punct pub-posts">публикации</div>
 <!--    запросы-->
