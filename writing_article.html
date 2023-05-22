@@ -50,11 +50,11 @@
     <div class="article-form">
         <form method="POST" class="art-form" action="">
             <p class="str str1"><span class="f-name">Title</span> <input type="text" class="art-into f-value" name="title" required></p>
-            <p class="str"><span class="f-name">Summary</span> <input type="text" class="art-into f-value" name="summary" required></p>
+            <div class="str txtar"><span class="f-name">Summary</span> <textarea class="art-into f-value" name="summary" required></textarea></div>
             <p class="str"><span class="f-name">Upload an image</span> <input type="file" accept="image/*" class="art-img f-value" name="image" required></p>
             <div class="editor"><textarea id="write" name="article"></textarea></div>
-            <p class="str"><span class="f-name">Select a category</span>
-                <select class="f-value select" name="categiry" required>
+            <p class="str selectp"><span class="f-name">Select a category</span>
+                <select class="f-value select" name="category" required>
                     <option value=""></option>
                     <option value="1">Category 1</option>
                     <option value="2">Category 2</option>

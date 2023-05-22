@@ -14,11 +14,13 @@
     box-shadow: 6px 6px 2px 1px rgba(0, 0, 255, .2);
 }
 .art-form {
-    width: 50vw;
+    width: 36vw;
     min-height: 300px;
     margin: 10px auto;
-
     font-family: Arial, sans-serif;
+}
+form {
+    width: 30vw;
 }
 .art-form p {
     margin: 6px auto;
@@ -29,14 +31,14 @@ p .str1 .f-name{
 }
 .f-name {
     color: #2c385e;
-    margin-left: 60px;
+    /*margin-left: 60px;*/
     margin-top: 0.3rem;
 }
 .f-value {
     width: 300px;
     height: 30px;
     float: right;
-    margin-right: 60px;
+    /*margin-right: 60px;*/
     border: none;
     padding: 0;
 }
@@ -68,10 +70,21 @@ input.art-img::-webkit-file-upload-button {
     padding-bottom: 50px;
 }
 .editor {
-    width: 42vw;
-    height: 330px;
-    margin: 5px auto;
+    width: 36vw;
+    height: max-content;
+    margin: 5px auto 25px auto;
 }
-#write {
+#write textarea{
     resize: none;
+    margin-bottom: 10px;
+}
+.txtar {
+    height: 60px;
+}
+.txtar textarea{
+    height: 50px;
+    resize: none;
+}
+.selectp {
+    margin-top: 10px;
 }
