@@ -101,9 +101,7 @@
             <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
         </div>
         <!-- Конец слайдшоу -->
-
-
-<!--        //-->
+        
         <!-- Для слайдшоу -->
         <div class="slide-container">
             <p class="category">Категория2</p>
@@ -225,26 +223,23 @@
 <script>
     // для слайд-шоу
     const slides = document.getElementsByClassName("slide");
+    const len = slides.length;
     let slideIndex = 1;
-    let elem = 0;
-    for(let i = 1; i < slides.length; i += 3){
-        showSlides(i, i-1);
-        console.log(i)
+    for(let slideIndex = 1; slideIndex < len; slideIndex += 3){
+        showSlides(slideIndex, slideIndex - 1);
     }
-    //showSlides(slideIndex, elem);
     function plusSlides(n, elem) {
         showSlides(slideIndex += n, elem);
     }
     function showSlides(n, elem) {
-        let i = elem;
-        let len = 3;
+        let i;
         const slides = document.getElementsByClassName("slide");
-        if (n > 3) {slideIndex = elem+1}
-        if (n < 1) {slideIndex = len}
-        for (i; i < len; i++) {
+        if (n > 3) {slideIndex = 1}
+        if (n < 1) {slideIndex = 3}
+        for (i = elem; i < elem + 3; i++) {
             slides[i].style.display = "none";
         }
-        slides[slideIndex-1].style.display = "block";
+        slides[slideIndex+elem-1].style.display = "block";
     }
 </script>
 </body>
