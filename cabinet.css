@@ -111,7 +111,7 @@
 }
 /*контейнер для избранных статей*/
 .fav-post-container {
-    background-color: #eaeaea;
+    background-color: #dedede;
     color: black;
     font-family: Arial, sans-serif;
     width: 40vw;
@@ -140,14 +140,14 @@
 .fav-post-container p span {
     color: dimgrey;
 }
-.fav-post-container .fp-category, .pp-category {
-    margin: 4px 40px 4px 0;
+.fav-post-container .fp-category, .pub-post-container .pp-category {
+    margin: 8px 40px 4px 0;
     float: right;
     color: dimgrey;
 }
 
 .pub-post-container {
-    background-color: #eaeaea;
+    background-color: #dedede;
     color: black;
     font-family: Arial, sans-serif;
     width: 40vw;
