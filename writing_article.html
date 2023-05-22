@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Написание статьи</title>
+    <link rel="stylesheet" href="navigation_panel.css">
+    <link rel="stylesheet" href="writing_article.css">
+    <link rel="stylesheet" href="login.css">
+    <script src="https://cdn.ckeditor.com/4.16.2/standard/ckeditor.js"></script>
+</head>
+<body>
+<div class="header">
+    <!--    навигационная панель-->
+    <nav class="nav_container">
+        <div class="nav">
+            <div class="logo">
+                <a class="logo" href="index.html">
+                    <p>
+                        <span>F</span>
+                        <span>O</span>
+                        <span>X</span>
+                        <span>Y</span>
+                    </p>
+                    <p class="second_str">
+                        <span>R</span>
+                        <span>E</span>
+                        <span>P</span>
+                        <span>O</span>
+                    </p>
+                </a>
+            </div>
+
+            <div class="menu">
+                <a href="new.html"><div class="menu_elem first">ВСЕ СТАТЬИ</div></a>
+                <a href="popular.html"><div class="menu_elem second">ПОПУЛЯРНОЕ</div></a>
+                <a href="about.html"><div class="menu_elem three">О ПЛОЩАДКЕ</div></a>
+                <div class="profile dropdown">
+                    <div class="menu_elem"> <img class="menu_elem" src="images/icon-profile.png">
+                        <div class="dropdown-content">
+                            <a href="#openModal">Войти</a>
+                            <a href="#openModal-signup">Зарегистрироваться</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+</div>
+<div class="container">
+    <div class="article-form">
+        <form method="POST" class="art-form" action="">
+            <p class="str str1"><span class="f-name">Title</span> <input type="text" class="art-into f-value" name="title" required></p>
+            <p class="str"><span class="f-name">Summary</span> <input type="text" class="art-into f-value" name="summary" required></p>
+            <p class="str"><span class="f-name">Upload an image</span> <input type="file" accept="image/*" class="art-img f-value" name="image" required></p>
+            <div class="editor"><textarea id="write" name="article"></textarea></div>
+            <p class="str"><span class="f-name">Select a category</span>
+                <select class="f-value select" name="categiry" required>
+                    <option value=""></option>
+                    <option value="1">Category 1</option>
+                    <option value="2">Category 2</option>
+                    <option value="3">Category 3</option>
+                    <option value="4">Category 4</option>
+                </select>
+            </p>
+            <p class="str btn"><button type="submit" class="publish">Publish</button> </p>
+        </form>
+    </div>
+</div>
+
+<!-- модальное окно для входа-->
+<div id="openModal" class="modal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <a href="#close" title="Close" class="close">×</a>
+            </div>
+            <div class="modal-body">
+                <div class="form-container">
+                    <p class="modal-title">Авторизация</p>
+                    <form method="POST" class="form" action="">
+                        <p><input class="intext login" type="text" placeholder="Login"  required></p>
+                        <p><input class="intext pass" type="password" placeholder="Password" required></p>
+                        <p class="into"><button type="submit">Login</button></p>
+                        <p class="or">---------------  <span class="sp">or</span>  ---------------</p>
+                        <a href="#openModal-signup"><p class="but">Create new account</p></a>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- модальное окно для регистрации-->
+<div id="openModal-signup" class="modal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <a href="#close" title="Close" class="close">×</a>
+            </div>
+            <div class="modal-body">
+                <div class="form-container">
+                    <p class="modal-title">Регистрация</p>
+                    <form method="POST" class="form" action="">
+                        <p><input class="intext login" type="text" placeholder="Login"  required></p>
+                        <p><input class="intext pass" type="password" placeholder="Password" required></p>
+                        <p><input class="intext email" type="text" placeholder="Email" required></p>
+                        <p><input class="intext tg" type="text" placeholder="Tg"></p>
+                        <p><input class="intext about" type="text" placeholder="About yourself" size="512"></p>
+                        <p class="into"><button type="submit">Create new account</button></p>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="footer">
+    <div class="footer_container">
+        <div class="footer-col"><span>Энциклопедия © 2023</span></div>
+        <div class="footer-col">
+            <div class="social-bar-wrap">
+                <a title="Facebook" href="https://vk.com/ivanhoe_kn" target="_blank"><img src="images/facebook.png"></a>
+                <a title="VK" href="https://vk.com/ivanhoe_kn" target="_blank"><img src="images/vk.png"></a>
+                <a title="Telegram" href=https://vk.com/ivanhoe_kn" target="_blank"><img src="images/telegram.png"></a>
+                <a title="Instagram" href="https://vk.com/ivanhoe_kn" target="_blank"><img src="images/instagram.png"></a>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    CKEDITOR.replace('write', {
+        extraPlugins: 'basicstyles, format'
+    });
+</script>
+</body>
+</html>
